@@ -1,0 +1,41 @@
+{
+  "name": "hyperframes",
+  "owner": {
+    "name": "HeyGen",
+    "email": "hyperframes@heygen.com",
+    "url": "https://hyperframes.heygen.com"
+  },
+  "metadata": {
+    "description": "HyperFrames plugin marketplace. Write HTML, render video.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "hyperframes",
+      "source": "./",
+      "description": "HyperFrames by HeyGen. Compositions, GSAP animations, captions, voiceovers, audio-reactive visuals, and website-to-video capture authoring skills for HyperFrames.",
+      "version": "0.1.0",
+      "author": {
+        "name": "HeyGen",
+        "email": "hyperframes@heygen.com",
+        "url": "https://hyperframes.heygen.com"
+      },
+      "homepage": "https://hyperframes.heygen.com",
+      "repository": "https://github.com/heygen-com/hyperframes",
+      "license": "Apache-2.0",
+      "category": "design",
+      "keywords": [
+        "hyperframes",
+        "video",
+        "html",
+        "gsap",
+        "animation",
+        "composition",
+        "rendering",
+        "captions",
+        "tts",
+        "audio-reactive"
+      ]
+    }
+  ]
+}
