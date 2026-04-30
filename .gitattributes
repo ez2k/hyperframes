@@ -12,3 +12,19 @@ packages/producer/tests/*/src/*.png filter=lfs diff=lfs merge=lfs -text
 # which is the actual implementation, surfaces as the dominant language.
 registry/**/*.html linguist-vendored
 *.html linguist-detectable=false
+
+# Claude Code plugin install zipball — exclude framework source, tests, and
+# build infra so the marketplace zip only contains plugin assets (skills/,
+# .claude-plugin/, root docs). Test fixtures with high compression ratios
+# (e.g. silence.wav) trip Claude Code's zip-bomb safety threshold otherwise.
+packages/      export-ignore
+registry/      export-ignore
+docs/          export-ignore
+scripts/       export-ignore
+.github/       export-ignore
+Dockerfile.test export-ignore
+bun.lock       export-ignore
+package.json   export-ignore
+knip.config.ts export-ignore
+commitlint.config.js export-ignore
+lefthook.yml   export-ignore
